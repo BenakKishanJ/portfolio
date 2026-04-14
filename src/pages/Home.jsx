@@ -1,8 +1,9 @@
 // import React from "react";
 import { motion } from "framer-motion";
-import { IoLogoLinkedin, IoLogoTwitter } from "react-icons/io5";
 import { BiLogoGmail } from "react-icons/bi";
+import { IoLogoLinkedin } from "react-icons/io5";
 import { BsGithub } from "react-icons/bs";
+import { BsDiscord } from "react-icons/bs";
 import { TypeAnimation } from "react-type-animation";
 
 export default function Home() {
@@ -65,7 +66,7 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 1 }}
           >
-            Passionate about technology, I specialize in  Full Stack Developer and Web Designing. I'm focused on building innovative solutions and continuously expanding my skills in React, Node.js, and modern web technologies. My goal is to grow as a developer and contribute to impactful projects in the tech industry.
+            Passionate about technology, I specialize in <strong>Full Stack Developer</strong> and Web Designing. I'm focused on building innovative solutions and continuously expanding my skills in React, Node.js, and modern web technologies. My goal is to grow as a developer and contribute to impactful projects in the tech industry.
           </motion.p>
 
           <motion.div
@@ -74,17 +75,50 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.8, duration: 1 }}
           >
-            {[BiLogoGmail, IoLogoLinkedin, IoLogoTwitter, BsGithub].map((Icon, index) => (
-              <motion.a
-                key={index}
-                href="#"
-                className="bg-white p-2 lg:p-3 rounded border-2 border-black"
-                whileHover={{ scale: 1.1, backgroundColor: "#000", color: "#fff" }}
-                whileTap={{ scale: 0.9 }}
-              >
-                <Icon className="w-4 h-4 lg:w-5 lg:h-5" />
-              </motion.a>
-            ))}
+            <motion.a
+              href="mailto:benakkishanj@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white p-2 lg:p-3 rounded border-2 border-black"
+              whileHover={{ scale: 1.1, backgroundColor: "#dc2626", color: "#fff" }}
+              whileTap={{ scale: 0.9 }}
+              aria-label="Gmail"
+            >
+              <BiLogoGmail className="w-4 h-4 lg:w-5 lg:h-5" />
+            </motion.a>
+            <motion.a
+              href="https://linkedin.com/in/benakkishanj"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white p-2 lg:p-3 rounded border-2 border-black"
+              whileHover={{ scale: 1.1, backgroundColor: "#0077b5", color: "#fff" }}
+              whileTap={{ scale: 0.9 }}
+              aria-label="LinkedIn"
+            >
+              <IoLogoLinkedin className="w-4 h-4 lg:w-5 lg:h-5" />
+            </motion.a>
+            <motion.a
+              href="https://discord.gg/benki777"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white p-2 lg:p-3 rounded border-2 border-black"
+              whileHover={{ scale: 1.1, backgroundColor: "#5865F2", color: "#fff" }}
+              whileTap={{ scale: 0.9 }}
+              aria-label="Discord - BenKi"
+            >
+              <BsDiscord className="w-4 h-4 lg:w-5 lg:h-5" />
+            </motion.a>
+            <motion.a
+              href="https://github.com/BenakKishanJ"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white p-2 lg:p-3 rounded border-2 border-black"
+              whileHover={{ scale: 1.1, backgroundColor: "#333", color: "#fff" }}
+              whileTap={{ scale: 0.9 }}
+              aria-label="GitHub"
+            >
+              <BsGithub className="w-4 h-4 lg:w-5 lg:h-5" />
+            </motion.a>
           </motion.div>
         </motion.div>
 
@@ -94,7 +128,7 @@ export default function Home() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, ease: "easeInOut" }}
         >
-          <img className="h-full w-full" src="/assets/hero.png" alt="Hero Vector" />
+          <img className="h-full w-full" src="/assets/hero.png" alt="Hero Vector" loading="lazy" width="800" height="600" />
         </motion.div>
       </div>
     </div>
