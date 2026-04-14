@@ -65,7 +65,7 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 1 }}
           >
-            Passionate about technology, I specialize in Web Development and Web Designing. I’m focused on building innovative solutions and continuously expanding my skills. My goal is to grow as a developer and contribute to impactful projects in the tech industry.
+            Passionate about technology, I specialize in  Full Stack Developer and Web Designing. I'm focused on building innovative solutions and continuously expanding my skills in React, Node.js, and modern web technologies. My goal is to grow as a developer and contribute to impactful projects in the tech industry.
           </motion.p>
 
           <motion.div

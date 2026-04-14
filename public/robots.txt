@@ -2,3 +2,16 @@ User-agent: *
 Allow: /
 
 Sitemap: https://benakkishanj.vercel.app/sitemap.xml
+
+# Security directives
+X-Robots-Tag: noindex, nofollow
+
+# Block admin and backup directories
+Disallow: /admin/
+Disallow: /.env
+Disallow: /.git/
+
+# Allow search engines to crawl important pages
+Allow: /projects/
+Allow: /skills/
+Allow: /about/
