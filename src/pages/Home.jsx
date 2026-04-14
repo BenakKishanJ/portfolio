@@ -89,12 +89,12 @@ export default function Home() {
         </motion.div>
 
         <motion.div
-          className="lg:w-[55%] w-full"
+          className="lg:w-[40%] w-full"
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, ease: "easeInOut" }}
         >
-          <img className="h-full w-full" src="/assets/hero-vector.svg" alt="Hero Vector" />
+          <img className="h-full w-full" src="/assets/hero.png" alt="Hero Vector" />
         </motion.div>
       </div>
     </div>
