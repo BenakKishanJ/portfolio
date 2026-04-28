@@ -30,6 +30,13 @@ const projects = [
     description: "Full-stack academic management app for students, teachers, and admins with attendance, courses, events, and discussion forums.",
     image: "/assets/aitian.jpeg",
     link: "https://github.com/BenakKishanJ/aitian"
+  },
+  {
+    id: 5,
+    title: "Bee-Mithra – Smart Bee Conservation System",
+    description: "IoT and AI-based system to monitor honey bee hive conditions in real-time, analyze behavior patterns, and support sustainable beekeeping and environmental conservation.",
+    image: "/assets/beemithra.png",
+    link: "https://bee-mitra.onrender.com"
   }];
 
 export default function Projects() {
