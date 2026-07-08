@@ -22,3 +22,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+#GSD
+.gsd/*
+.bg-shell/*
+*.md
