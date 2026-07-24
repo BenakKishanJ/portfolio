@@ -7,8 +7,8 @@ const projects = [
     id: 1,
     title: "MindfulFlow – Digital Wellness App",
     description: "AI-powered digital wellness app with eye & posture monitoring, screen time tracking, and smart interventions. Funded by IISc ART Park and selected for ICRCA Japan.",
-    image: "/assets/mindfulflow.jpeg",
-    link: "https://github.com/BenakKishanJ/MindfulFlow_Android"
+    image: "/assets/mindfulflow.png",
+    link: "https://benkicodes.pages.dev/projects/mindfulflow"
   },
   {
     id: 2,
