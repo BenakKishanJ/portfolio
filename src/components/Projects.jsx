@@ -37,6 +37,13 @@ const projects = [
     description: "IoT and AI-based system to monitor honey bee hive conditions in real-time, analyze behavior patterns, and support sustainable beekeeping and environmental conservation.",
     image: "/assets/beemithra.png",
     link: "https://bee-mitra.onrender.com"
+  },
+  {
+    id: 6,
+    title: "ShopIQ – AI Retail Assistant",
+    description: "Agentic AI assistant for retail stores that answers inventory and sales questions in plain language, retrieves store policies via RAG with source citations, and routes reorder actions through a human approval trail.",
+    image: "/assets/shopiq_home.png",
+    link: "https://github.com/BenakKishanJ/shop-iq"
   }];
 
 export default function Projects() {
