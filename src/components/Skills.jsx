@@ -37,7 +37,7 @@ export default function Skills() {
       id: 1,
       company: "MindMatrixEd",
       role: "Android App Development Intern",
-      period: "Dec 2026 - Present",
+      period: "Feb 2026 - Aug 2026",
       description:
         "Working as an Android App Development Intern, gaining hands-on experience in building and improving mobile applications using modern Android development practices. Involved in implementing features, debugging, and testing to ensure smooth app performance. Exploring the integration of Generative AI into mobile applications to enhance functionality and user experience. Collaborating on structured modules and real-world projects, while strengthening skills in application architecture, problem-solving, and development workflows.",
       logo: "/assets/mindmatrix.png",
