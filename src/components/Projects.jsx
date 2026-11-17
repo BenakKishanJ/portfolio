@@ -5,6 +5,14 @@ import { motion } from "framer-motion";
 const projects = [
   {
     id: 1,
+    title: "BenKi Codes – Dev Blog & Build-Along Roadmaps",
+    description:
+      "Astro + TypeScript monorepo powering this site: AI-drafted, human-reviewed tech articles and quiz-backed roadmaps, with a LangGraph content pipeline, build-time OG images and a CI-guarded Cloudflare Pages deploy.",
+    image: "/assets/benkicodes.png",
+    link: "https://benkicodes.pages.dev/",
+  },
+  {
+    id: 2,
     title: "MindfulFlow – Digital Wellness App",
     description:
       "AI-powered digital wellness app with eye & posture monitoring, screen time tracking, and smart interventions. Funded by IISc ART Park and selected for ICRCA Japan.",
@@ -12,7 +20,7 @@ const projects = [
     link: "https://benkicodes.pages.dev/projects/mindfulflow",
   },
   {
-    id: 2,
+    id: 3,
     title: "RogueWolf – Gymwear E-commerce",
     description:
       "Production-ready e-commerce platform with 3D product preview, virtual try-on, Razorpay payments, and full order management.",
@@ -20,7 +28,7 @@ const projects = [
     link: "https://rogue-wolf.vercel.app/",
   },
   {
-    id: 3,
+    id: 4,
     title: "Forelli’s Car Detailing Platform",
     description:
       "Modern service booking platform with backend management, clean UI, and conversion-focused design for a car detailing business.",
@@ -28,7 +36,7 @@ const projects = [
     link: "https://forellis-detailing.vercel.app/",
   },
   {
-    id: 4,
+    id: 5,
     title: "AITian – College Management App",
     description:
       "Full-stack academic management app for students, teachers, and admins with attendance, courses, events, and discussion forums.",
@@ -36,7 +44,7 @@ const projects = [
     link: "https://github.com/BenakKishanJ/aitian",
   },
   {
-    id: 5,
+    id: 6,
     title: "Bee-Mithra – Smart Bee Conservation System",
     description:
       "IoT and AI-based system to monitor honey bee hive conditions in real-time, analyze behavior patterns, and support sustainable beekeeping and environmental conservation.",
@@ -44,20 +52,12 @@ const projects = [
     link: "https://bee-mitra.onrender.com",
   },
   {
-    id: 6,
+    id: 7,
     title: "ShopIQ – AI Retail Assistant",
     description:
       "Agentic AI assistant for retail stores that answers inventory and sales questions in plain language, retrieves store policies via RAG with source citations, and routes reorder actions through a human approval trail.",
     image: "/assets/shopiq_home.png",
     link: "https://github.com/BenakKishanJ/shop-iq",
-  },
-  {
-    id: 7,
-    title: "BenKi Codes – Dev Blog & Build-Along Roadmaps",
-    description:
-      "Astro + TypeScript monorepo powering this site: AI-drafted, human-reviewed tech articles and quiz-backed roadmaps, with a LangGraph content pipeline, build-time OG images and a CI-guarded Cloudflare Pages deploy.",
-    image: "/assets/benkicodes.png",
-    link: "https://benkicodes.pages.dev/",
   },
 ];
 
