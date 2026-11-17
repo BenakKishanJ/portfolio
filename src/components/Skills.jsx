@@ -1,9 +1,17 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { FaJs, FaReact, FaNodeJs, FaPython, FaDatabase, FaJava } from "react-icons/fa";
-import { BiLogoPostgresql } from "react-icons/bi";
+import {
+  FaJs,
+  FaReact,
+  FaNodeJs,
+  FaPython,
+  FaDatabase,
+  FaJava,
+  FaAws,
+} from "react-icons/fa";
+import { BiLogoPostgresql, BiLogoGoLang } from "react-icons/bi";
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
-import { CgFigma } from "react-icons/cg";
+import { SiFastapi, SiLangchain, SiDocker, SiLinux } from "react-icons/si";
 
 export default function Skills() {
   const [skills] = useState([
@@ -11,12 +19,17 @@ export default function Skills() {
     { id: 2, name: "React", icon: <FaReact size={50} /> },
     { id: 3, name: "Node.js", icon: <FaNodeJs size={50} /> },
     { id: 4, name: "Python", icon: <FaPython size={50} /> },
-    { id: 5, name: "MongoDB", icon: <FaDatabase size={50} /> },
-    { id: 6, name: "Java", icon: <FaJava size={50} /> },
-    { id: 7, name: "Postgresql", icon: <BiLogoPostgresql size={50} /> },
-    { id: 8, name: "Next.js", icon: <RiNextjsFill size={50} /> },
-    { id: 9, name: "Tailwind", icon: <RiTailwindCssFill size={50} /> },
-    { id: 10, name: "Figma", icon: <CgFigma size={50} /> },
+    { id: 5, name: "Java", icon: <FaJava size={50} /> },
+    { id: 6, name: "Next.js", icon: <RiNextjsFill size={50} /> },
+    { id: 7, name: "Tailwind", icon: <RiTailwindCssFill size={50} /> },
+    { id: 8, name: "MongoDB", icon: <FaDatabase size={50} /> },
+    { id: 9, name: "Postgresql", icon: <BiLogoPostgresql size={50} /> },
+    { id: 10, name: "FastAPI", icon: <SiFastapi size={50} /> },
+    { id: 11, name: "LangChain", icon: <SiLangchain size={50} /> },
+    { id: 12, name: "Docker", icon: <SiDocker size={50} /> },
+    { id: 13, name: "AWS", icon: <FaAws size={50} /> },
+    { id: 14, name: "Linux", icon: <SiLinux size={50} /> },
+    { id: 15, name: "Go", icon: <BiLogoGoLang size={50} /> },
   ]);
 
   const [experiences] = useState([
@@ -28,13 +41,12 @@ export default function Skills() {
       description:
         "Working as an Android App Development Intern, gaining hands-on experience in building and improving mobile applications using modern Android development practices. Involved in implementing features, debugging, and testing to ensure smooth app performance. Exploring the integration of Generative AI into mobile applications to enhance functionality and user experience. Collaborating on structured modules and real-world projects, while strengthening skills in application architecture, problem-solving, and development workflows.",
       logo: "/assets/mindmatrix.png",
-    }
+    },
   ]);
 
   return (
     <div className="mt-3 lg:mt-16" id="skills">
       <div className="px-5 lg:px-28">
-
         <motion.h2
           className="text-2xl lg:text-4xl text-center"
           initial={{ opacity: 0, y: -20 }}
@@ -53,7 +65,11 @@ export default function Skills() {
               className="bg-white border-2 hover:bg-black hover:text-white transition-all cursor-pointer border-black rounded p-3 h-36 w-36 lg:h-44 lg:w-44 flex flex-col items-center justify-center gap-5"
               initial={{ opacity: 0, y: 5 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, ease: "easeOut", delay: skill.id * 0.1 }}
+              transition={{
+                duration: 0.8,
+                ease: "easeOut",
+                delay: skill.id * 0.1,
+              }}
               viewport={{ once: true }}
             >
               {skill.icon}
@@ -61,7 +77,6 @@ export default function Skills() {
             </motion.div>
           ))}
         </div>
-
       </div>
 
       {/* Experience Section */}
@@ -109,7 +124,6 @@ export default function Skills() {
             </motion.div>
           ))}
         </div>
-
       </div>
     </div>
   );
